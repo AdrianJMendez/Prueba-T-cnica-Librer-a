@@ -60,7 +60,7 @@ Raíz del repositorio:
  **Instalación y Ejecución**
 
 1.  Clona el repositorio:  
-    git clone [https://github.com/AdrianJMendez/Prueba-T-cnica-Librer-a/edit/main/Readme.md]([https://github.com/tu-usuario/LibreriaApp.git](https://github.com/AdrianJMendez/Prueba-T-cnica-Librer-a/edit/main/Readme.md))
+    git clone [https://github.com/AdrianJMendez/PruebaTecnicaLibreria](https://github.com/AdrianJMendez/PruebaTecnicaLibreria)
     
 2.  Configura la base de datos PostgreSQL y edita la cadena de conexión en appsettings.json:  
     "DefaultConnection": `"Host=localhost;Port=5432;Database=gestion_libros;Username=postgres;Password=tu_contraseña"`
