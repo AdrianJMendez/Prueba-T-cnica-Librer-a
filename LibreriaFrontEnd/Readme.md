@@ -74,8 +74,9 @@ _Ejecutar el frontend :_
 **Capturas de pantalla**
 
 
-![Imagen de Referencia]([https://ibb.co/pvBSxYx1](https://i.ibb.co/0jRxcHcn/Captura-de-pantalla-12-5-2025-232347-localhost.jpg))
+![Imagen de Referencia](https://i.ibb.co/0jRxcHcn/Captura-de-pantalla-12-5-2025-232347-localhost.jpg)
 
-![Imagen de Referencia]([https://ibb.co/pjcVp1ZF](https://i.ibb.co/F42ZthJT/Captura-de-pantalla-12-5-2025-23261-localhost.jpg))
+![Imagen de Referencia](https://i.ibb.co/F42ZthJT/Captura-de-pantalla-12-5-2025-23261-localhost.jpg)
 
-![Imagen de Referencia]([https://ibb.co/XrbzZfGW](https://i.ibb.co/S4PKXDZ6/Captura-de-pantalla-12-5-2025-23273-localhost.jpg))
+![Imagen de Referencia](https://i.ibb.co/S4PKXDZ6/Captura-de-pantalla-12-5-2025-23273-localhost.jpg)
+
