@@ -1,0 +1,80 @@
+@page "/libros"
+@inject LibroService LibroService
+@inject AutorService AutorService
+@inject NavigationManager NavManager
+
+@using LibreriaApp.Client.Services
+@using LibreriaApp.Shared.DTOs
+@using MudBlazor
+
+<MudPaper Class="p-8 mt-10 mx-auto max-w-5xl rounded-2xl shadow-md bg-white">
+    <MudText Typo="Typo.h4" Class="mb-6 text-primary text-center font-semibold">Lista de Libros</MudText>
+
+    <MudTextField @bind-Value="_busqueda" Placeholder="Buscar por título, género, autor o año..." Variant="Variant.Outlined" Adornment="Adornment.Start" AdornmentIcon="@Icons.Material.Filled.Search" Class="mb-6 w-full" Immediate="true" />
+
+    <MudTable Items="_librosFiltrados" Dense="true" Hover="true" Bordered="true">
+        <HeaderContent>
+            <MudTh>Título</MudTh>
+            <MudTh>Año</MudTh>
+            <MudTh>Género</MudTh>
+            <MudTh>N° Páginas</MudTh>
+            <MudTh>Autor</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd>@context.Titulo</MudTd>
+            <MudTd>@context.Anio</MudTd>
+            <MudTd>@context.Genero</MudTd>
+            <MudTd>@context.NumeroPaginas</MudTd>
+            <MudTd>@ObtenerNombreAutor(context.AutorId)</MudTd>
+        </RowTemplate>
+    </MudTable>
+</MudPaper>
+
+@implements IDisposable
+
+@code {
+    private List<LibroDto> _libros = new();
+    private List<AutorDto> _autores = new();
+    private string _busqueda = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        NavManager.LocationChanged += OnLocationChanged;
+        await CargarDatosAsync();
+    }
+
+    private async void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    {
+      
+        if (NavManager.Uri.EndsWith("/libros", StringComparison.OrdinalIgnoreCase))
+        {
+            await CargarDatosAsync();
+            StateHasChanged();
+        }
+    }
+
+    private async Task CargarDatosAsync()
+    {
+        _libros = await LibroService.ObtenerLibrosAsync();
+        _autores = await AutorService.ObtenerTodosAsync();
+    }
+
+    private IEnumerable<LibroDto> _librosFiltrados =>
+        _libros.Where(libro =>
+            string.IsNullOrWhiteSpace(_busqueda) ||
+            libro.Titulo.Contains(_busqueda, StringComparison.OrdinalIgnoreCase) ||
+            ObtenerNombreAutor(libro.AutorId).Contains(_busqueda, StringComparison.OrdinalIgnoreCase) ||
+            libro.Anio.ToString().Contains(_busqueda) ||
+            (libro.Genero?.Contains(_busqueda, StringComparison.OrdinalIgnoreCase) ?? false)
+        );
+
+    private string ObtenerNombreAutor(Guid autorId)
+    {
+        return _autores.FirstOrDefault(a => a.Id == autorId)?.NombreCompleto ?? "Desconocido";
+    }
+
+    public void Dispose()
+    {
+        NavManager.LocationChanged -= OnLocationChanged;
+    }
+}

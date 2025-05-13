@@ -1,0 +1,11 @@
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\bin\Debug\net9.0\Libreria.Domain.deps.json
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\bin\Debug\net9.0\Libreria.Domain.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\bin\Debug\net9.0\Libreria.Domain.pdb
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\refint\Libreria.Domain.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\Libreria.Domain.pdb
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaApi\Libreria.Domain\obj\Debug\net9.0\ref\Libreria.Domain.dll

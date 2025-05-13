@@ -1,0 +1,11 @@
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\bin\Debug\net7.0\LibreriaApp.Shared.deps.json
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\bin\Debug\net7.0\LibreriaApp.Shared.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\bin\Debug\net7.0\LibreriaApp.Shared.pdb
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.AssemblyInfo.cs
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\refint\LibreriaApp.Shared.dll
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\LibreriaApp.Shared.pdb
+C:\Users\Usuario\Documents\Proyectos\Libreria_Prueba\LibreriaFrontEnd\LibreriaApp\Shared\obj\Debug\net7.0\ref\LibreriaApp.Shared.dll

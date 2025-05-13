@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Libreria.API</name>
+    </assembly>
+    <members>
+        <member name="T:Libreria.API.Controllers.AutoresController">
+            <summary>
+            Controlador para gestionar autores.
+            </summary>
+        </member>
+        <member name="M:Libreria.API.Controllers.AutoresController.#ctor(Libreria.Application.Services.Interfaces.IAutorService)">
+            <summary>
+            Constructor del controlador de autores.
+            </summary>
+            <param name="autorService">Servicio de autores inyectado.</param>
+        </member>
+        <member name="M:Libreria.API.Controllers.AutoresController.CrearAutor(Libreria.Application.DTOs.CrearAutorDto)">
+            <summary>
+            Crea un nuevo autor.
+            </summary>
+            <param name="dto">Datos del autor a crear.</param>
+            <returns>El autor creado con su ubicación.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.AutoresController.ObtenerAutorPorId(System.Guid)">
+            <summary>
+            Obtiene un autor por su ID.
+            </summary>
+            <param name="id">Identificador del autor.</param>
+            <returns>El autor si existe, o NotFound.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.AutoresController.ObtenerAutorPorCorreo(System.String)">
+            <summary>
+            Obtiene un autor por su correo electrónico.
+            </summary>
+            <param name="correo">Correo del autor.</param>
+            <returns>El autor si existe, o NotFound.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.AutoresController.ListarAutores">
+            <summary>
+            Lista todos los autores registrados.
+            </summary>
+            <returns>Una lista de autores.</returns>
+        </member>
+        <member name="T:Libreria.API.Controllers.LibrosController">
+            <summary>
+            Controlador para gestionar libros.
+            </summary>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.#ctor(Libreria.Application.Services.Interfaces.ILibroService)">
+            <summary>
+            Constructor del controlador de libros.
+            </summary>
+            <param name="libroService">Servicio de libros inyectado.</param>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.CrearLibro(Libreria.Application.DTOs.CrearLibroDto)">
+            <summary>
+            Crea un nuevo libro.
+            </summary>
+            <param name="dto">Datos del libro a crear.</param>
+            <returns>El libro creado con su ubicación.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.ObtenerLibroPorId(System.Guid)">
+            <summary>
+            Obtiene un libro por su ID.
+            </summary>
+            <param name="id">Identificador del libro.</param>
+            <returns>El libro si existe, o NotFound.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.ObtenerTodosLosLibros">
+            <summary>
+            Obtiene todos los libros registrados.
+            </summary>
+            <returns>Una lista de libros.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.ActualizarLibro(System.Guid,Libreria.Application.DTOs.CrearLibroDto)">
+            <summary>
+            Actualiza los datos de un libro existente.
+            </summary>
+            <param name="id">ID del libro a actualizar.</param>
+            <param name="dto">Nuevos datos del libro.</param>
+            <returns>204 NoContent si fue exitoso.</returns>
+        </member>
+        <member name="M:Libreria.API.Controllers.LibrosController.EliminarLibro(System.Guid)">
+            <summary>
+            Elimina un libro por su ID.
+            </summary>
+            <param name="id">Identificador del libro.</param>
+            <returns>204 NoContent si fue eliminado correctamente.</returns>
+        </member>
+    </members>
+</doc>
